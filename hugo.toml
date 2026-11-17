@@ -1,0 +1,71 @@
+baseURL = 'https://zyzone.top/'
+languageCode = 'zh-cn'
+title = 'ZYZONE'
+theme = 'PaperMod'
+
+[params]
+defaultTheme = 'auto' #主题跟随
+disableThemeToggle = false #主题切换不显示
+ShowReadingTime = false #展示阅读时间
+ShowToc = true #博客文章中展示目录
+ShowCodeCopyButtons = true #展示代码复制按钮
+ShowBreadCrumbs = false #显示面包碎导航
+displayFullLangName = true #显示完整语言名称，暂时没有启用多语言的打算
+mainSections = ["posts"] #指定posts是网站的主要文章板块。
+ShowRssButtonInSectionTermList = true #支持的文章列表、分类或标签列表页面显示RSS订阅按钮
+ShowFullTextinRSS = true #控制RSS中是否包含完整正文
+
+#欢迎页面的设置
+[params.homeInfoParams]
+Title = "你好，欢迎你来"
+Content = "分享一些技术，思考，还有碎碎念"
+
+
+#主页社交平台icon
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com" #github什么都没有...
+
+[[params.socialIcons]]
+name = "email"
+url = "mailto:zyz@zyzone.top" #联系邮箱未定
+
+[[params.socialIcons]]
+name = "rss"
+url = "/posts/index.xml" #需要修改网址
+
+[[params.socialIcons]]
+name = "other"
+url = "<link>" #测试用
+
+
+#顶部导航栏
+[[menu.main]]
+name = "归档"
+url = "/archives/"
+weight = 10
+
+[[menu.main]]
+name = "碎碎念"
+url = "/moments/"
+weight = 20
+
+[[menu.main]]
+name = "分类"
+url = "/categories/"
+weight = 30
+
+[[menu.main]]
+name = "标签"
+url = "/tags/"
+weight = 40
+
+[[menu.main]]
+name = "写真墙"
+url = "/photo/"
+weight = 50
+
+[[menu.main]]
+name = "关于"
+url = "/about/"
+weight = 60

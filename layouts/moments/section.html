@@ -1,0 +1,39 @@
+
+{{- define "main" }}
+
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+  {{ with .Description }}
+    <div class="post-description">{{ . }}</div>
+  {{ end }}
+</header>
+
+<div class="moments-timeline">
+  {{ range .RegularPages.ByDate.Reverse }}
+
+  <div class="moment-item">
+
+    <!-- 左侧日期 -->
+    <div class="moment-date">
+      <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+        {{ .Date.Format "2006-01-02" }}
+        <small>{{ .Date.Format "15:04" }}</small>
+      </time>
+    </div>
+
+    <!-- 中间时间轴 -->
+    <div class="moment-line">
+      <span class="moment-dot"></span>
+    </div>
+
+    <!-- 右侧内容 -->
+    <article class="moment-content">
+      {{ .Content }}
+    </article>
+
+  </div>
+
+  {{ end }}
+</div>
+
+{{- end }}

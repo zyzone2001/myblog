@@ -1,0 +1,101 @@
+
+/* 整个时间轴 */
+.moments-timeline {
+    margin-top: 30px;
+}
+
+/* 每条动态 */
+.moment-item {
+    display: grid;
+    grid-template-columns: 100px 24px minmax(0, 1fr);
+    gap: 12px;
+    align-items: stretch;
+}
+
+/* 左侧日期 */
+.moment-date {
+    text-align: right;
+    padding-top: 12px;
+    font-size: 14px;
+    color: var(--secondary);
+}
+
+.moment-date small {
+    display: block;
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+/* 中间竖线 */
+.moment-line {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.moment-line::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--tertiary);
+}
+
+/* 时间轴上的圆点 */
+.moment-dot {
+    position: relative;
+    z-index: 1;
+    width: 11px;
+    height: 11px;
+    margin-top: 16px;
+    border-radius: 50%;
+    background: var(--primary);
+    border: 2px solid var(--theme);
+}
+
+/* 右侧卡片 */
+.moment-content {
+    min-width: 0;
+    margin-bottom: 24px;
+    padding: 16px 20px;
+    background: var(--entry);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+.moment-content p {
+    margin-bottom: 10px;
+}
+
+.moment-content p:last-child {
+    margin-bottom: 0;
+}
+
+.moment-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* 手机端适配 */
+@media (max-width: 600px) {
+    .moment-item {
+        grid-template-columns: 65px 16px minmax(0, 1fr);
+        gap: 8px;
+    }
+
+    .moment-date {
+        font-size: 11px;
+    }
+
+    .moment-date small {
+        font-size: 10px;
+    }
+
+    .moment-content {
+        padding: 12px;
+    }
+}
