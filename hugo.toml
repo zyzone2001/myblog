@@ -24,7 +24,7 @@ Content = "分享一些技术，思考，还有碎碎念"
 #主页社交平台icon
 [[params.socialIcons]]
 name = "github"
-url = "https://github.com" #github什么都没有...
+url = "https://github.com/zyzone2001" #github什么都没有...
 
 [[params.socialIcons]]
 name = "email"
@@ -34,9 +34,9 @@ url = "mailto:zyz@zyzone.top" #联系邮箱未定
 name = "rss"
 url = "/posts/index.xml" #需要修改网址
 
-[[params.socialIcons]]
-name = "other"
-url = "<link>" #测试用
+#[[params.socialIcons]]
+#name = "other"
+#url = "<link>" #测试用
 
 
 #顶部导航栏
@@ -60,10 +60,10 @@ name = "标签"
 url = "/tags/"
 weight = 40
 
-[[menu.main]]
-name = "写真墙"
-url = "/photo/"
-weight = 50
+#[[menu.main]]
+#name = "写真墙"
+#url = "/photo/"
+#weight = 50
 
 [[menu.main]]
 name = "关于"
