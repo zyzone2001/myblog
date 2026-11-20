@@ -2,22 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2026-11-20T23:31:13+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2026-11-20T23:31:13+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-11-20T23:31:13+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/20261120-i_miss_my_home/</loc>
+    <lastmod>2026-11-20T23:31:13+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/%E6%9D%82%E8%B0%88/</loc>
+    <lastmod>2026-11-20T23:31:13+09:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/moments/202611152149/</loc>
     <lastmod>2026-11-15T21:49:36+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/moments/</loc>
     <lastmod>2026-11-15T21:49:36+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2026-11-15T21:49:36+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2026-11-09T22:23:00+09:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/categories/categorie1/</loc>
-    <lastmod>2026-11-09T22:23:00+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/</loc>
     <lastmod>2026-11-09T22:23:00+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/categories2/</loc>
